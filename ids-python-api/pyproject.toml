@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "idsdata"
+version = "0.1.0"
+description = "interject data api"
+authors = ["harmonichemispheres <robby.boney@harmonichemispheres.com>"]
+license = "MIT"
+
+
+[tool.poetry.scripts]
+idsdata = "idsdata.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.6.1"
+fastapi = "^0.85.1"
+uvicorn = "^0.18.3"
+pydantic = "^1.10.2"
+pyjwt = {extras = ["crypto"], version = "^2.7.0"}
+pandas = "^2.0.1"
+sqlalchemy = "^2.0.15"
+pyodbc = "^4.0.39"
+loguru = "^0.7.2"
+openai = "^1.7.2"
+duckdb = "^0.9.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+ 
